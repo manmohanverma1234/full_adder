@@ -1,0 +1,15 @@
+module fa(input logic a,b,cin, clr, output logic carry, sum
+    );
+    
+    
+    logic w0,w1,w2;
+    
+    ha x1 (b,cin,clr,w0,w1);
+    
+    ha x2 (a,w1,clr,w2,sum);
+    
+    or (carry,w0,w2 );
+    
+    
+    
+endmodule
